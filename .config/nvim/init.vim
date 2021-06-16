@@ -42,6 +42,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'hrsh7th/nvim-compe'
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
+Plug 'andweeb/presence.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 call plug#end()
 
