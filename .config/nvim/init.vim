@@ -27,6 +27,7 @@ set encoding=UTF-8
 set mouse=a
 set background=dark
 set nospell
+set guicursor=
 
 noremap <Leader>y "*y
 noremap <Leader>p "*p
@@ -40,9 +41,10 @@ Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'hrsh7th/nvim-compe'
+Plug 'andweeb/presence.nvim'
+Plug 'preservim/nerdtree'
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
-Plug 'andweeb/presence.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 call plug#end()
 
@@ -51,3 +53,8 @@ source ~/.config/nvim/compe.vim
 source ~/.config/nvim/telescope.vim
 colorscheme gruvbox
 hi Normal guibg=NONE ctermbg=NONE
+" Start NERDTree and put the cursor back in the other window.
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
