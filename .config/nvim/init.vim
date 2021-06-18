@@ -30,20 +30,13 @@ set nospell
 set guicursor=
 set termguicolors
 
-noremap <Leader>y "*y
-noremap <Leader>p "*p
-noremap <Leader>Y "+y
-noremap <Leader>P "+p
-
 call plug#begin('~/.config/nvim/plugged')
 Plug 'neovim/nvim-lspconfig'
 Plug 'sheerun/vim-polyglot'
-Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'hrsh7th/nvim-compe'
 Plug 'andweeb/presence.nvim'
-Plug 'preservim/nerdtree'
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
@@ -52,10 +45,4 @@ call plug#end()
 source ~/.config/nvim/lsp.vim
 source ~/.config/nvim/compe.vim
 source ~/.config/nvim/telescope.vim
-colorscheme gruvbox
 hi Normal guibg=NONE ctermbg=NONE
-" Start NERDTree and put the cursor back in the other window.
-nnoremap <leader>n :NERDTreeFocus<CR>
-nnoremap <C-n> :NERDTree<CR>
-nnoremap <C-t> :NERDTreeToggle<CR>
-nnoremap <C-f> :NERDTreeFind<CR>
