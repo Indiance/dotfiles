@@ -42,6 +42,3 @@ cursor:
     shape: Block
     unfocused_hollow: true
 live_config_reload: true
-
-key_bindings:
-    - { key: N,        mods: Control|Shift,    action: SpawnNewInstance    }
