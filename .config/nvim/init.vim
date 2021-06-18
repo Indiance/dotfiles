@@ -27,7 +27,6 @@ set encoding=UTF-8
 set mouse=a
 set background=dark
 set nospell
-set guicursor=
 set termguicolors
 
 call plug#begin('~/.config/nvim/plugged')
@@ -39,8 +38,10 @@ Plug 'andweeb/presence.nvim'
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
+Plug 'hrsh7th/nvim-compe'
 call plug#end()
 
 source ~/.config/nvim/lsp.vim
 source ~/.config/nvim/telescope.vim
+source ~/.config/nvim/compe.vim
 hi Normal guibg=NONE ctermbg=NONE
