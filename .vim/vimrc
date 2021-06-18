@@ -4,6 +4,7 @@ filetype plugin indent on
 let $RTP=split(&runtimepath, ',')[0]
 let $RC="~/.vim/vimrc"
 let mapleader = " "
+let g:netrw_browse_split=3
 
 set shiftwidth=4 
 set tabstop=4
@@ -38,9 +39,7 @@ set nospell
 set omnifunc=syntaxcomplete#Complete
 set termguicolors
 
-colorscheme gruvbox
-nnoremap <leader>n :NERDTreeFocus<CR>
-nnoremap <C-n> :NERDTree<CR>
-nnoremap <C-t> :NERDTreeToggle<CR>
-nnoremap <C-f> :NERDTreeFind<CR>
 hi Normal guibg=NONE ctermbg=NONE
+let g:netrw_liststyle = 3
+let g:netrw_banner = 0
+let g:netrw_browse_split = 1
