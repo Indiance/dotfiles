@@ -28,6 +28,7 @@ set mouse=a
 set background=dark
 set nospell
 set guicursor=
+set termguicolors
 
 noremap <Leader>y "*y
 noremap <Leader>p "*p
