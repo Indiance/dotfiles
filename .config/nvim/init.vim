@@ -4,7 +4,12 @@ filetype plugin indent on
 let $RTP=split(&runtimepath, ',')[0]
 let mapleader = " "
 
-set shiftwidth=4 tabstop=4 softtabstop=4 expandtab autoindent smartindent
+set shiftwidth=4 
+set tabstop=4 
+set softtabstop=4 
+set expandtab 
+set autoindent 
+set smartindent
 set exrc
 set nocompatible
 set backspace=indent,eol,start
@@ -28,19 +33,22 @@ set mouse=a
 set background=dark
 set nospell
 set termguicolors
+set guicursor=
 
 call plug#begin('~/.config/nvim/plugged')
 Plug 'neovim/nvim-lspconfig'
 Plug 'sheerun/vim-polyglot'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'andweeb/presence.nvim'
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'hrsh7th/nvim-compe'
+Plug 'morhetz/gruvbox'
+Plug 'andweeb/presence.nvim'
 call plug#end()
 
+colorscheme gruvbox
 source ~/.config/nvim/lsp.vim
 source ~/.config/nvim/telescope.vim
 source ~/.config/nvim/compe.vim
