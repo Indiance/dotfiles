@@ -24,7 +24,6 @@ set relativenumber
 set completeopt=menuone,noinsert,noselect
 set spell
 set nohlsearch
-set scrolloff=8
 set colorcolumn=80
 set signcolumn=yes
 set cmdheight=2
@@ -38,5 +37,6 @@ set completeopt=longest,menuone
 set nospell
 set termguicolors
 set omnifunc=syntaxcomplete#Complete
+set scrolloff=8
 
-colorscheme monokai
+hi Normal guibg=NONE ctermbg=NONE
