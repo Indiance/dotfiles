@@ -35,8 +35,5 @@ set mouse=a
 set background=dark
 set completeopt=longest,menuone
 set nospell
-set termguicolors
 set omnifunc=syntaxcomplete#Complete
 set scrolloff=8
-
-hi Normal guibg=NONE ctermbg=NONE
