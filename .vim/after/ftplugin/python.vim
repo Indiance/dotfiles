@@ -4,4 +4,3 @@ setlocal include=^\\s*import
 setlocal define=^\\s*\\<\\(def\\\|class\\)\\>
 compiler python
 nnoremap <buffer> <space> :silent make <bar> redraw!<CR>
-set omnifunc=python3complete#Complete
