@@ -32,7 +32,6 @@ set encoding=UTF-8
 set mouse=a
 set background=dark
 set nospell
-set termguicolors
 set guicursor=
 
 call plug#begin('~/.config/nvim/plugged')
@@ -44,11 +43,11 @@ Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'hrsh7th/nvim-compe'
-Plug 'morhetz/gruvbox'
 Plug 'andweeb/presence.nvim'
+Plug 'drewtempelmeyer/palenight.vim'
 call plug#end()
 
-colorscheme gruvbox
+colorscheme palenight
 source ~/.config/nvim/lsp.vim
 source ~/.config/nvim/telescope.vim
 source ~/.config/nvim/compe.vim
