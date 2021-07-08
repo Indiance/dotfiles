@@ -44,10 +44,8 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'hrsh7th/nvim-compe'
 Plug 'andweeb/presence.nvim'
-Plug 'drewtempelmeyer/palenight.vim'
 call plug#end()
 
-colorscheme palenight
 source ~/.config/nvim/lsp.vim
 source ~/.config/nvim/telescope.vim
 source ~/.config/nvim/compe.vim
