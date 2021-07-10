@@ -33,6 +33,7 @@ set mouse=a
 set background=dark
 set nospell
 set guicursor=
+set termguicolors
 
 call plug#begin('~/.config/nvim/plugged')
 Plug 'neovim/nvim-lspconfig'
