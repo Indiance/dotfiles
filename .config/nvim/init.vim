@@ -36,6 +36,7 @@ set guicursor=
 set termguicolors
 
 call plug#begin('~/.config/nvim/plugged')
+Plug 'morhetz/gruvbox'
 Plug 'neovim/nvim-lspconfig'
 Plug 'sheerun/vim-polyglot'
 Plug 'vim-airline/vim-airline'
@@ -47,6 +48,7 @@ Plug 'hrsh7th/nvim-compe'
 Plug 'andweeb/presence.nvim'
 call plug#end()
 
+colorscheme gruvbox
 source ~/.config/nvim/lsp.vim
 source ~/.config/nvim/telescope.vim
 source ~/.config/nvim/compe.vim

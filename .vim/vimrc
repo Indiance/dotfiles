@@ -39,4 +39,5 @@ set omnifunc=syntaxcomplete#Complete
 set scrolloff=8
 set termguicolors
 
+colorscheme gruvbox 
 hi Normal guibg=NONE ctermbg=NONE
