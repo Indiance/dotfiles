@@ -33,18 +33,18 @@ set mouse=a
 set background=dark
 set nospell
 set guicursor=
+set termguicolors
 
 call plug#begin('~/.config/nvim/plugged')
-Plug 'morhetz/gruvbox'
 Plug 'neovim/nvim-lspconfig'
 Plug 'sheerun/vim-polyglot'
 Plug 'nvim-lua/popup.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'hrsh7th/nvim-compe'
+Plug 'tpope/vim-fugitive'
 call plug#end()
 
-colorscheme gruvbox
 source ~/.config/nvim/lsp.vim
 source ~/.config/nvim/telescope.vim
 source ~/.config/nvim/compe.vim

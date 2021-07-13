@@ -37,8 +37,7 @@ set omnifunc=syntaxcomplete#Complete
 set scrolloff=8
 set laststatus=2
 set hidden
-
-colorscheme gruvbox 
+set termguicolors
 
 hi Normal guibg=NONE ctermbg=NONE
 function! GitBranch()
