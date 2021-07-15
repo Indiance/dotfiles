@@ -43,6 +43,7 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'hrsh7th/nvim-compe'
 Plug 'tpope/vim-fugitive'
+Plug 'itchyny/lightline.vim'
 call plug#end()
 
 source ~/.config/nvim/lsp.vim
