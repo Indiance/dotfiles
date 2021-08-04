@@ -53,7 +53,6 @@ colorscheme gruvbox
 source ~/.config/nvim/lsp.vim
 source ~/.config/nvim/telescope.vim
 source ~/.config/nvim/compe.vim
-hi Normal guibg=NONE ctermbg=NONE
 let g:netrw_banner = 0
 let g:netrw_liststyle = 3
 let g:netrw_browse_split = 4
