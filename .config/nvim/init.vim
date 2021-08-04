@@ -33,7 +33,6 @@ set mouse=a
 set background=dark
 set nospell
 set guicursor=
-set termguicolors
 
 call plug#begin('~/.config/nvim/plugged')
 Plug 'sheerun/vim-polyglot'
@@ -45,11 +44,9 @@ Plug 'hrsh7th/nvim-compe'
 Plug 'tpope/vim-fugitive'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'morhetz/gruvbox'
 Plug 'andweeb/presence.nvim'
 call plug#end()
 
-colorscheme gruvbox
 source ~/.config/nvim/lsp.vim
 source ~/.config/nvim/telescope.vim
 source ~/.config/nvim/compe.vim
