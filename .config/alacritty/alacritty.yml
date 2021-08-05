@@ -1,0 +1,44 @@
+window:
+  dimensions:
+    columns: 140
+    lines: 38
+
+  padding:
+    x: 10
+    y: 10
+
+  decorations: none
+
+
+  dynamic_title: true
+
+  scrolling:
+   history: 10000
+   multiplier: 3
+
+  font:
+    normal:
+      family: menlo
+      style: Regular
+
+    bold:
+      family: menlo
+
+      style: menlo
+
+    italic:
+      family: menlo
+
+      style: Italic
+
+    bold_italic:
+      family: menlo
+
+background_opacity: 0.75
+
+
+cursor:
+  style:
+    shape: Block
+    unfocused_hollow: true
+live_config_reload: true
