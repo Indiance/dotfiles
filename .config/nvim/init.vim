@@ -33,6 +33,8 @@ set mouse=a
 set background=dark
 set nospell
 set guicursor=
+set termguicolors 
+autocmd vimenter * hi Normal guibg=NONE ctermbg=NONE
 
 call plug#begin('~/.config/nvim/plugged')
 Plug 'sheerun/vim-polyglot'
@@ -43,8 +45,10 @@ Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/nvim-compe'
 Plug 'itchyny/lightline.vim'
 Plug 'andweeb/presence.nvim'
+Plug 'morhetz/gruvbox'
 call plug#end()
 
+colorscheme gruvbox
 source ~/.config/nvim/lsp.vim
 source ~/.config/nvim/telescope.vim
 source ~/.config/nvim/compe.vim
@@ -69,3 +73,6 @@ let g:presence_plugin_manager_text = "Managing plugins"
 let g:presence_reading_text        = "Reading %s"
 let g:presence_workspace_text      = "Working on %s"
 let g:presence_line_number_text    = "Line %s out of %s"
+let g:lightline = {
+      \ 'colorscheme': 'gruvbox',
+      \ }
