@@ -37,15 +37,11 @@ set omnifunc=syntaxcomplete#Complete
 set scrolloff=8
 set hidden
 set termguicolors
-autocmd vimenter * hi Normal guibg=NONE ctermbg=NONE
 
+colorscheme gruvbox
 let g:netrw_banner = 0
 let g:netrw_liststyle = 3
 let g:netrw_browse_split = 4
 let g:netrw_altv = 1
 let g:netrw_winsize = 25
 set laststatus=2
-colorscheme gruvbox 
-let g:lightline = {
-      \ 'colorscheme': 'gruvbox',
-      \ }

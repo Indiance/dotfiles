@@ -34,7 +34,6 @@ set background=dark
 set nospell
 set guicursor=
 set termguicolors 
-autocmd vimenter * hi Normal guibg=NONE ctermbg=NONE
 
 call plug#begin('~/.config/nvim/plugged')
 Plug 'sheerun/vim-polyglot'
@@ -44,11 +43,11 @@ Plug 'nvim-telescope/telescope.nvim'
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/nvim-compe'
 Plug 'itchyny/lightline.vim'
-Plug 'andweeb/presence.nvim'
 Plug 'morhetz/gruvbox'
 call plug#end()
 
 colorscheme gruvbox
+hi Normal guibg=NONE ctermbg=NONE
 source ~/.config/nvim/lsp.vim
 source ~/.config/nvim/telescope.vim
 source ~/.config/nvim/compe.vim
@@ -57,13 +56,6 @@ let g:netrw_liststyle = 3
 let g:netrw_browse_split = 4
 let g:netrw_altv = 1
 let g:netrw_winsize = 25
-
-" General options
-let g:presence_auto_update         = 1
-let g:presence_neovim_image_text   = "The One True Text Editor"
-let g:presence_main_image          = "neovim"
-let g:presence_debounce_timeout    = 10
-let g:presence_enable_line_number  = 0
 
 " Rich Presence text options
 let g:presence_editing_text        = "Editing %s"
