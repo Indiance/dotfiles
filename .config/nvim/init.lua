@@ -1,7 +1,6 @@
 -- global options
 vim.g.mapleader = ' '
 vim.o.number = true
-vim.o.termguicolors = true
 vim.o.backspace = [[indent,eol,start]]
 vim.o.hidden = true
 vim.o.completeopt = [[menuone,noselect]]
