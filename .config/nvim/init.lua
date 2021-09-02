@@ -28,7 +28,6 @@ vim.bo.smartindent = true
 -- packer packages 
 require('packer').startup(function()
     use 'wbthomason/packer.nvim'
-    use 'morhetz/gruvbox'
     use 'neovim/nvim-lspconfig'
     use 'hrsh7th/nvim-compe'
     use {
@@ -36,10 +35,7 @@ require('packer').startup(function()
   requires = { {'nvim-lua/plenary.nvim'} }
 }
 end)
--- colorscheme stuff
-vim.cmd('colorscheme gruvbox')
-vim.cmd('au ColorScheme * hi Normal ctermbg=none guibg=none')
--- importing in stuff
+-- importing configuration files
 require('teleconfig')
 require('lsp')
 require('compeconfig')
