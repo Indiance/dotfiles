@@ -11,6 +11,7 @@ vim.o.updatetime = 50
 vim.o.shortmess = vim.o.shortmess .. "c"
 vim.o.mouse = "a"
 vim.o.background = "dark"
+vim.o.termguicolors = true
 -- window options
 vim.wo.relativenumber = true
 vim.wo.wrap = false
