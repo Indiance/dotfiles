@@ -1,11 +1,12 @@
+"making file stuff work
 syntax on
 filetype plugin indent on
 packloadall
-
+" variables
 let $RTP=split(&runtimepath, ',')[0]
 let $RC="~/.vim/vimrc"
 let mapleader = " "
-
+" core parts of vim
 set shiftwidth=4 
 set tabstop=4
 set softtabstop=4 
@@ -37,11 +38,22 @@ set omnifunc=syntaxcomplete#Complete
 set scrolloff=8
 set hidden
 set termguicolors
-
+" just colorscheme stuff
+colorscheme gruvbox 
 hi Normal guibg=NONE ctermbg=NONE
+" netrw stuff
 let g:netrw_banner = 0
 let g:netrw_liststyle = 3
 let g:netrw_browse_split = 4
 let g:netrw_altv = 1
 let g:netrw_winsize = 25
+" vim statusline to show filepath, whether its modified or not, percentage of
+" file where cursor is at and line:column
 set laststatus=2
+set statusline=
+set statusline+=\ %F
+set statusline+=%m
+set statusline+=\ %y
+set statusline+=%=
+set statusline+=\ %p%%
+set statusline+=\ %l:%c

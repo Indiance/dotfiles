@@ -31,12 +31,19 @@ require('packer').startup(function()
     use 'wbthomason/packer.nvim'
     use 'neovim/nvim-lspconfig'
     use 'hrsh7th/nvim-compe'
+    use 'morhetz/gruvbox'
     use {
   'nvim-telescope/telescope.nvim',
   requires = { {'nvim-lua/plenary.nvim'} }
 }
 end)
+-- colorscheme stuff
+vim.cmd('colorscheme gruvbox')
+vim.cmd('au ColorScheme * hi Normal ctermbg=none guibg=none')
 -- importing configuration files
 require('teleconfig')
 require('lsp')
 require('compeconfig')
+-- making some keybindings kekw. This one enables buffer navigation
+vim.api.nvim_set_keymap('n', '<F8>', ':tabn<CR>', { noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', '<F7>', ':tabp<CR>', { noremap = true, silent = true})
