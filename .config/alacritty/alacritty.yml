@@ -14,24 +14,18 @@ window:
   scrolling:
    history: 10000
    multiplier: 3
+font:
+  normal:
+    family:  Menlo
+    style: Regular
 
-  font:
-    normal:
-      family: menlo
-      style: Regular
+  bold:
+    family: Menlo 
+    style: Bold
 
-    bold:
-      family: menlo
-
-      style: menlo
-
-    italic:
-      family: menlo
-
-      style: Italic
-
-    bold_italic:
-      family: menlo
+  italic:
+    family: Menlo 
+    style: Italic
 
 background_opacity: 0.75
 
