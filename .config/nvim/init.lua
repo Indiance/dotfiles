@@ -11,7 +11,6 @@ vim.o.updatetime = 50
 vim.o.shortmess = vim.o.shortmess .. "c"
 vim.o.mouse = "a"
 vim.o.background = "dark"
-vim.o.termguicolors = true
 -- window options
 vim.wo.relativenumber = true
 vim.wo.wrap = false
@@ -40,6 +39,8 @@ end)
 -- colorscheme stuff
 vim.cmd('colorscheme gruvbox')
 vim.cmd('au ColorScheme * hi Normal ctermbg=none guibg=none')
+-- this is for le cursor
+vim.cmd(':set guicursor=')
 -- importing configuration files
 require('teleconfig')
 require('lsp')
