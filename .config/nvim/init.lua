@@ -29,6 +29,7 @@ require('packer').startup(function()
     use 'wbthomason/packer.nvim'
     use 'neovim/nvim-lspconfig'
     use 'hrsh7th/nvim-compe'
+    use 'joshdick/onedark.vim'
     use {
   'nvim-telescope/telescope.nvim',
   requires = { {'nvim-lua/plenary.nvim'} }
@@ -36,6 +37,9 @@ require('packer').startup(function()
 end)
 -- this is for le cursor
 vim.cmd(':set guicursor=')
+-- colorscheme stuff
+vim.cmd(':set termguicolors')
+vim.cmd(':colorscheme onedark')
 -- importing configuration files
 require('teleconfig')
 require('lsp')
