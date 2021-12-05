@@ -2,7 +2,6 @@
 vim.g.mapleader = ' '
 vim.o.number = true
 vim.o.backspace = [[indent,eol,start]]
-vim.o.hidden = true
 vim.o.completeopt = [[menuone,noselect]]
 vim.o.hlsearch = false 
 vim.o.scrolloff = 8
@@ -30,15 +29,11 @@ require('packer').startup(function()
     use 'wbthomason/packer.nvim'
     use 'neovim/nvim-lspconfig'
     use 'hrsh7th/nvim-compe'
-    use 'morhetz/gruvbox'
     use {
   'nvim-telescope/telescope.nvim',
   requires = { {'nvim-lua/plenary.nvim'} }
 }
 end)
--- colorscheme stuff
-vim.cmd('colorscheme gruvbox')
-vim.cmd('au ColorScheme * hi Normal ctermbg=none guibg=none')
 -- this is for le cursor
 vim.cmd(':set guicursor=')
 -- importing configuration files

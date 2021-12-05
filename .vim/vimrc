@@ -37,10 +37,6 @@ set nospell
 set omnifunc=syntaxcomplete#Complete
 set scrolloff=8
 set hidden
-set termguicolors
-" just colorscheme stuff
-colorscheme gruvbox 
-hi Normal guibg=NONE ctermbg=NONE
 " netrw stuff
 let g:netrw_banner = 0
 let g:netrw_liststyle = 3
