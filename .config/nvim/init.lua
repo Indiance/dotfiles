@@ -38,7 +38,6 @@ end)
 -- this is for le cursor
 vim.cmd(':set guicursor=')
 -- colorscheme stuff
-vim.cmd(':set termguicolors')
 vim.cmd(':colorscheme onedark')
 -- importing configuration files
 require('teleconfig')
