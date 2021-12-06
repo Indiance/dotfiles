@@ -39,6 +39,7 @@ end)
 vim.cmd(':set guicursor=')
 -- colorscheme stuff
 vim.cmd(':colorscheme onedark')
+vim.cmd('autocmd vimenter * hi Normal guibg=NONE ctermbg=NONE')
 -- importing configuration files
 require('teleconfig')
 require('lsp')
