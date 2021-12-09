@@ -1,0 +1,28 @@
+window:
+  dimensions:
+    columns: 140
+    lines: 38
+
+  decorations: none 
+
+  padding:
+    x: 10
+    y: 10
+
+  dynamic_title: true
+
+  scrolling:
+   history: 10000
+   multiplier: 3
+background_opacity: 0.75
+
+cursor:
+  style:
+    shape: Block
+    unfocused_hollow: true
+live_config_reload: true
+key_bindings:
+  - { key: F, mods: Control, action: ToggleFullScreen}
+  - { key: M, mods: Control, action: Minimize}
+  - { key: N, mods: Control, action: SpawnNewInstance}
+  - { key: V, mods: Control, action: Paste}
