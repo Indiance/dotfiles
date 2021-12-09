@@ -40,6 +40,8 @@ set hidden
 "colorscheme stuff
 colorscheme nord
 set termguicolors
+set termguicolors
+colorscheme nord
 autocmd vimenter * hi Normal guibg=NONE ctermbg=NONE
 " netrw stuff
 let g:netrw_banner = 0

@@ -35,6 +35,7 @@ require('packer').startup(function()
   requires = { {'nvim-lua/plenary.nvim'} }
 }
 end)
+vim.cmd('autocmd vimenter * hi Normal guibg=NONE ctermbg=NONE')
 -- this is for le cursor
 vim.cmd(':set guicursor=')
 -- colorscheme stuff
