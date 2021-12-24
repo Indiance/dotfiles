@@ -37,6 +37,9 @@ set nospell
 set omnifunc=syntaxcomplete#Complete
 set scrolloff=8
 set hidden
+"colorscheme stuff
+colorscheme nord
+set termguicolors
 set termguicolors
 colorscheme nord
 autocmd vimenter * hi Normal guibg=NONE ctermbg=NONE
