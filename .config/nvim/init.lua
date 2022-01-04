@@ -29,19 +29,21 @@ require('packer').startup(function()
     use 'wbthomason/packer.nvim'
     use 'neovim/nvim-lspconfig'
     use 'hrsh7th/nvim-compe'
-    use 'arcticicestudio/nord-vim'
+    use 'itchyny/lightline.vim'
+    use 'morhetz/gruvbox'
+    use 'tpope/vim-fugitive'
     use {
   'nvim-telescope/telescope.nvim',
   requires = { {'nvim-lua/plenary.nvim'} }
 }
 end)
-vim.cmd('autocmd vimenter * hi Normal guibg=NONE ctermbg=NONE')
--- this is for le cursor
-vim.cmd(':set guicursor=')
 -- colorscheme stuff
-vim.cmd(':colorscheme nord')
-vim.cmd(':set termguicolors')
-vim.cmd('autocmd vimenter * hi Normal guibg=NONE ctermbg=NONE')
+vim.cmd('colorscheme gruvbox')
+vim.cmd('set termguicolors')
+vim.cmd('hi Normal guibg=NONE ctermbg=NONE')
+vim.g.lightline = {
+    colorscheme = "gruvbox"
+}
 -- importing configuration files
 require('teleconfig')
 require('lsp')

@@ -2,10 +2,22 @@
 syntax on
 filetype plugin indent on
 packloadall
+
 " variables
 let $RTP=split(&runtimepath, ',')[0]
 let $RC="~/.vim/vimrc"
 let mapleader = " "
+let g:lightline = {
+      \ 'colorscheme': 'gruvbox',
+      \ }
+
+" netrw stuff
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+let g:netrw_browse_split = 4
+let g:netrw_altv = 1
+let g:netrw_winsize = 25
+
 " core parts of vim
 set shiftwidth=4 
 set tabstop=4
@@ -37,25 +49,9 @@ set nospell
 set omnifunc=syntaxcomplete#Complete
 set scrolloff=8
 set hidden
-"colorscheme stuff
-colorscheme nord
-set termguicolors
-set termguicolors
-colorscheme nord
-autocmd vimenter * hi Normal guibg=NONE ctermbg=NONE
-" netrw stuff
-let g:netrw_banner = 0
-let g:netrw_liststyle = 3
-let g:netrw_browse_split = 4
-let g:netrw_altv = 1
-let g:netrw_winsize = 25
-" vim statusline to show filepath, whether its modified or not, percentage of
-" file where cursor is at and line:column
 set laststatus=2
-set statusline=
-set statusline+=\ %F
-set statusline+=%m
-set statusline+=\ %y
-set statusline+=%=
-set statusline+=\ %p%%
-set statusline+=\ %l:%c
+
+" colorscheme stuff
+colorscheme gruvbox
+set termguicolors
+hi Normal guibg=NONE ctermbg=NONE
