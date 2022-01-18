@@ -6,10 +6,7 @@ packloadall
 " variables
 let $RTP=split(&runtimepath, ',')[0]
 let $RC="~/.vim/vimrc"
-let mapleader = " "
-let g:lightline = {
-      \ 'colorscheme': 'gruvbox',
-      \ }
+let mapleader = ","
 
 " netrw stuff
 let g:netrw_banner = 0
@@ -49,9 +46,8 @@ set nospell
 set omnifunc=syntaxcomplete#Complete
 set scrolloff=8
 set hidden
+let g:lightline = {
+      \ 'colorscheme': 'palenight',
+      \ }
+colorscheme palenight
 set laststatus=2
-
-" colorscheme stuff
-colorscheme gruvbox
-set termguicolors
-hi Normal guibg=NONE ctermbg=NONE

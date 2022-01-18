@@ -1,5 +1,5 @@
 -- global options
-vim.g.mapleader = ' '
+vim.g.mapleader = ','
 vim.o.number = true
 vim.o.backspace = [[indent,eol,start]]
 vim.o.completeopt = [[menuone,noselect]]
@@ -30,20 +30,14 @@ require('packer').startup(function()
     use 'neovim/nvim-lspconfig'
     use 'hrsh7th/nvim-compe'
     use 'itchyny/lightline.vim'
-    use 'morhetz/gruvbox'
     use 'tpope/vim-fugitive'
+    use 'drewtempelmeyer/palenight.vim'
+    use 'lervag/vimtex'
     use {
   'nvim-telescope/telescope.nvim',
   requires = { {'nvim-lua/plenary.nvim'} }
 }
 end)
--- colorscheme stuff
-vim.cmd('colorscheme gruvbox')
-vim.cmd('set termguicolors')
-vim.cmd('hi Normal guibg=NONE ctermbg=NONE')
-vim.g.lightline = {
-    colorscheme = "gruvbox"
-}
 -- importing configuration files
 require('teleconfig')
 require('lsp')
@@ -51,3 +45,8 @@ require('compeconfig')
 -- making some keybindings kekw. This one enables buffer navigation
 vim.api.nvim_set_keymap('n', '<F8>', ':tabn<CR>', { noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<F7>', ':tabp<CR>', { noremap = true, silent = true})
+-- colorscheme things
+vim.cmd('colorscheme palenight')
+vim.g.lightline = {
+    colorscheme = "palenight"
+}
