@@ -46,8 +46,5 @@ set nospell
 set omnifunc=syntaxcomplete#Complete
 set scrolloff=8
 set hidden
-let g:lightline = {
-      \ 'colorscheme': 'palenight',
-      \ }
-colorscheme palenight
 set laststatus=2
+set termguicolors

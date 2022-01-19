@@ -45,8 +45,3 @@ require('compeconfig')
 -- making some keybindings kekw. This one enables buffer navigation
 vim.api.nvim_set_keymap('n', '<F8>', ':tabn<CR>', { noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<F7>', ':tabp<CR>', { noremap = true, silent = true})
--- colorscheme things
-vim.cmd('colorscheme palenight')
-vim.g.lightline = {
-    colorscheme = "palenight"
-}
