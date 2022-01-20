@@ -47,4 +47,3 @@ set omnifunc=syntaxcomplete#Complete
 set scrolloff=8
 set hidden
 set laststatus=2
-set termguicolors

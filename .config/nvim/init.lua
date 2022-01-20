@@ -24,20 +24,18 @@ vim.bo.tabstop = 4
 vim.bo.softtabstop = 4
 vim.bo.autoindent = true
 vim.bo.smartindent = true
--- packer packages 
-require('packer').startup(function()
-    use 'wbthomason/packer.nvim'
-    use 'neovim/nvim-lspconfig'
-    use 'hrsh7th/nvim-compe'
-    use 'itchyny/lightline.vim'
-    use 'tpope/vim-fugitive'
-    use 'drewtempelmeyer/palenight.vim'
-    use 'lervag/vimtex'
-    use {
-  'nvim-telescope/telescope.nvim',
-  requires = { {'nvim-lua/plenary.nvim'} }
+-- package manager stuff
+require "paq" {
+    "savq/paq-nvim";
+    -- lsp and autocompletion
+    "neovim/nvim-lspconfig";
+    "hrsh7th/nvim-compe";
+    "itchyny/lightline.vim"; -- vim statusline
+    "tpope/vim-fugitive"; -- git manager
+    -- telescope and its dependencies
+    "nvim-telescope/telescope.nvim";
+    "nvim-lua/plenary.nvim";
 }
-end)
 -- importing configuration files
 require('teleconfig')
 require('lsp')
