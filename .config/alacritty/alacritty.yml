@@ -41,7 +41,6 @@ key_bindings:
   - { key: M, mods: Control, action: Minimize}
   - { key: N, mods: Control, action: SpawnNewInstance}
   - { key: V, mods: Control, action: Paste}
-
 font:
   normal:
     family: FiraCode Nerd Font
@@ -49,3 +48,4 @@ font:
     family: FiraCode Nerd Font
   italic:
     family: FiraCode Nerd Font
+  # Colors (Gruvbox dark)

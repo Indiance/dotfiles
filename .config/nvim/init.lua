@@ -30,6 +30,7 @@ require "paq" {
     -- lsp and autocompletion
     "neovim/nvim-lspconfig";
     "hrsh7th/nvim-compe";
+    "itchyny/lightline.vim"; -- vim statusline
     "tpope/vim-fugitive"; -- git manager
     -- telescope and its dependencies
     "nvim-telescope/telescope.nvim";
