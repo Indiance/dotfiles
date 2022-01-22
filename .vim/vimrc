@@ -1,0 +1,51 @@
+"making file stuff work
+syntax on
+filetype plugin indent on
+packloadall
+
+" variables
+let $RTP=split(&runtimepath, ',')[0]
+let $RC="~/.vim/vimrc"
+let mapleader = ","
+
+" netrw stuff
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+let g:netrw_browse_split = 4
+let g:netrw_altv = 1
+let g:netrw_winsize = 25
+
+" core parts of vim
+set shiftwidth=4 
+set tabstop=4
+set softtabstop=4 
+set expandtab 
+set autoindent 
+set smartindent
+set exrc
+set nocompatible
+set backspace=indent,eol,start
+set nowrap
+set path=.,**
+set nu
+set relativenumber
+set completeopt=menuone,noinsert,noselect
+set spell
+set nohlsearch
+set colorcolumn=80
+set signcolumn=yes
+set cmdheight=2
+set updatetime=50
+set guicursor=
+set shortmess+=c
+set encoding=UTF-8
+set mouse=a
+set background=dark
+set completeopt=longest,menuone
+set nospell
+set omnifunc=syntaxcomplete#Complete
+set scrolloff=8
+set hidden
+set laststatus=2
+set termguicolors
+hi Normal guibg=NONE ctermbg=NONE

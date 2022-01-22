@@ -1,0 +1,51 @@
+window:
+  dimensions:
+    columns: 140
+    lines: 38
+
+  decorations: none 
+
+  padding:
+    x: 10
+    y: 10
+
+  dynamic_title: true
+
+  scrolling:
+   history: 10000
+   multiplier: 3
+
+  opacity: 0.70
+
+font:
+  normal:
+    family:  Menlo
+    style: Regular
+
+  bold:
+    family: Menlo 
+    style: Bold
+
+  italic:
+    family: Menlo 
+    style: Italic
+
+
+cursor:
+  style:
+    shape: Block
+    unfocused_hollow: true
+live_config_reload: true
+key_bindings:
+  - { key: F, mods: Control, action: ToggleFullScreen}
+  - { key: M, mods: Control, action: Minimize}
+  - { key: N, mods: Control, action: SpawnNewInstance}
+  - { key: V, mods: Control, action: Paste}
+
+font:
+  normal:
+    family: FiraCode Nerd Font
+  bold:
+    family: FiraCode Nerd Font
+  italic:
+    family: FiraCode Nerd Font
