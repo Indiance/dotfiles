@@ -2,35 +2,15 @@ window:
   dimensions:
     columns: 140
     lines: 38
-
   decorations: none 
-
   padding:
     x: 10
     y: 10
-
   dynamic_title: true
-
   scrolling:
    history: 10000
    multiplier: 3
-
-  opacity: 0.70
-
-font:
-  normal:
-    family:  Menlo
-    style: Regular
-
-  bold:
-    family: Menlo 
-    style: Bold
-
-  italic:
-    family: Menlo 
-    style: Italic
-
-
+  opacity: 0.60
 cursor:
   style:
     shape: Block
@@ -43,9 +23,63 @@ key_bindings:
   - { key: V, mods: Control, action: Paste}
 font:
   normal:
-    family: FiraCode Nerd Font
+    family: RobotoMono Nerd Font
   bold:
-    family: FiraCode Nerd Font
+    family: RobotoMono Nerd Font
   italic:
-    family: FiraCode Nerd Font
-  # Colors (Gruvbox dark)
+    family: RobotoMono Nerd Font
+colors:
+  primary:
+    background:        &gruvbox_dark_bg '#282828'
+    foreground:        '#ebdbb2'
+    bright_foreground: '#fbf1c7'
+    dim_foreground:    '#a89984'
+  cursor:
+    text:   CellBackground
+    cursor: CellForeground
+  vi_mode_cursor:
+    text:   CellBackground
+    cursor: CellForeground
+    search:
+      matches:
+        foreground: '#000000'
+        background: '#ffffff'
+      focused_match:
+          foreground: CellBackground
+          background: CellForeground
+      bar:
+        background: ''
+        foreground: ''
+    line_indicator:
+      foreground: None
+      background: None
+  selection:
+    text:       CellBackground
+    background: CellForeground
+  bright:
+    black:   '#928374'
+    red:     '#fb4934'
+    green:   '#b8bb26'
+    yellow:  '#fabd2f'
+    blue:    '#83a598'
+    magenta: '#d3869b'
+    cyan:    '#8ec07c'
+    white:   '#ebdbb2'
+  normal:
+    black:   *gruvbox_dark_bg
+    red:     '#cc241d'
+    green:   '#98971a'
+    yellow:  '#d79921'
+    blue:    '#458588'
+    magenta: '#b16286'
+    cyan:    '#689d6a'
+    white:   '#a89984'
+  dim:
+    black:   '#32302f'
+    red:     '#9d0006'
+    green:   '#79740e'
+    yellow:  '#b57614'
+    blue:    '#076678'
+    magenta: '#8f3f71'
+    cyan:    '#427b58'
+    white:   '#928374'
