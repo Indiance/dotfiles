@@ -34,13 +34,14 @@ require "paq" {
     -- telescope and its dependencies
     "nvim-telescope/telescope.nvim";
     "nvim-lua/plenary.nvim";
-    "altercation/vim-colors-solarized"; -- colorscheme
-    "itchyny/lightline.vim"; -- vim statusline
+    "arcticicestudio/nord-vim"; -- colorscheme
+    "nvim-lualine/lualine.nvim"; -- vim statusline
+    "kyazdani42/nvim-web-devicons";
 }
 -- vim commands
-vim.cmd('colorscheme solarized')
+vim.cmd('set termguicolors')
+vim.cmd('colorscheme nord')
 vim.cmd('hi Normal guibg=NONE ctermbg=NONE')
-vim.cmd('set guicursor=')
 -- importing configuration files
 require('teleconfig')
 require('lsp')
@@ -48,6 +49,12 @@ require('compeconfig')
 -- making some keybindings kekw. This one enables buffer navigation
 vim.api.nvim_set_keymap('n', '<F8>', ':tabn<CR>', { noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<F7>', ':tabp<CR>', { noremap = true, silent = true})
-vim.g.lightline = {
-    colorscheme = "solarized";
+vim.api.nvim_set_var('netrw_banner', 0)
+vim.api.nvim_set_var('netrw_liststyle', 3)
+vim.api.nvim_set_var('netrw_browsesplit', 4)
+vim.api.nvim_set_var('netrw_altv', 1)
+vim.api.nvim_set_var('netrw_winsize', 25)
+require('lualine').setup {
+    theme = 'nord';
 }
+require'nvim-web-devicons'.setup()
