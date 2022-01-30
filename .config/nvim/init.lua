@@ -30,19 +30,17 @@ require "paq" {
     -- lsp and autocompletion
     "neovim/nvim-lspconfig";
     "hrsh7th/nvim-compe";
-    "itchyny/lightline.vim"; -- vim statusline
     "tpope/vim-fugitive"; -- git manager
     -- telescope and its dependencies
     "nvim-telescope/telescope.nvim";
     "nvim-lua/plenary.nvim";
-    "gruvbox-community/gruvbox"; -- colorscheme
-    "nvim-lualine/lualine.nvim";
-    {"kyazdani42/nvim-web-devicons", opt=true};
+    "altercation/vim-colors-solarized"; -- colorscheme
+    "itchyny/lightline.vim"; -- vim statusline
 }
 -- vim commands
-vim.cmd('set termguicolors')
-vim.cmd('colorscheme gruvbox')
+vim.cmd('colorscheme solarized')
 vim.cmd('hi Normal guibg=NONE ctermbg=NONE')
+vim.cmd('set guicursor=')
 -- importing configuration files
 require('teleconfig')
 require('lsp')
@@ -50,6 +48,6 @@ require('compeconfig')
 -- making some keybindings kekw. This one enables buffer navigation
 vim.api.nvim_set_keymap('n', '<F8>', ':tabn<CR>', { noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<F7>', ':tabp<CR>', { noremap = true, silent = true})
-require('lualine').setup {
-    options = { theme = 'gruvbox' }
+vim.g.lightline = {
+    colorscheme = "solarized";
 }
