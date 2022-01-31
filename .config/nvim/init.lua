@@ -32,15 +32,16 @@ require "paq" {
     "hrsh7th/nvim-compe";
     "tpope/vim-fugitive"; -- git manager
     -- telescope and its dependencies
+    "morhetz/gruvbox";
     "nvim-telescope/telescope.nvim";
     "nvim-lua/plenary.nvim";
-    "arcticicestudio/nord-vim"; -- colorscheme
     "nvim-lualine/lualine.nvim"; -- vim statusline
     "kyazdani42/nvim-web-devicons";
 }
 -- vim commands
+vim.cmd('set guicursor=')
+vim.cmd('colorscheme gruvbox')
 vim.cmd('set termguicolors')
-vim.cmd('colorscheme nord')
 vim.cmd('hi Normal guibg=NONE ctermbg=NONE')
 -- importing configuration files
 require('teleconfig')
@@ -54,7 +55,5 @@ vim.api.nvim_set_var('netrw_liststyle', 3)
 vim.api.nvim_set_var('netrw_browsesplit', 4)
 vim.api.nvim_set_var('netrw_altv', 1)
 vim.api.nvim_set_var('netrw_winsize', 25)
-require('lualine').setup {
-    theme = 'nord';
-}
+require('lualine').setup()
 require'nvim-web-devicons'.setup()
