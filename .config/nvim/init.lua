@@ -41,7 +41,6 @@ require "paq" {
 -- vim commands
 vim.cmd('set guicursor=')
 vim.cmd('colorscheme gruvbox')
-vim.cmd('set termguicolors')
 vim.cmd('hi Normal guibg=NONE ctermbg=NONE')
 -- importing configuration files
 require('teleconfig')
