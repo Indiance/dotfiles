@@ -30,7 +30,6 @@ require "paq" {
     "nvim-lua/plenary.nvim";
     "gruvbox-community/gruvbox";
     "itchyny/lightline.vim";
-    "HendrikPetertje/vimify";
 }
 vim.cmd('colorscheme gruvbox')
 require('teleconfig')
@@ -48,4 +47,3 @@ vim.api.nvim_set_var('netrw_winsize', 25)
 vim.g['lightline'] = {
   colorscheme = 'gruvbox',
 }
-vim.g['spotify_token']='ZTU3NDU1NGI1YTc2NGQ1NTg4MmIyZWFkNGI1NTliYjk6IDkwYzM3MTU0NGRkNzQ4MjM5Yzc3NmY4MjJmYWI4NmE3'
